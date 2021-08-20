@@ -108,13 +108,13 @@ nav ul li {
 }
 .text-block{
   position:absolute;
-  bottom:10%;
+  bottom:30%;
   right:0%;
-  background-color:white;
-  opacity:0.8;
+  background-color: rgba(248, 245, 245, 0.5);
   padding-left:5%;
   padding-right:5%;
   font-weight:1000 ;
+  font-size: 1.25em;
 }
 .box-main{
   display: flex;
@@ -235,13 +235,68 @@ nav ul li {
   margin-right:auto ;
 }
 /* Timeline */
+.c1:before {
+  text-align:center ;
+  font-weight:600;
+  font-family:'Times New Roman', Times, serif ;
+  content:' Aman Dhattarwal is a popular Youtouber' ;
+ }
+ .c1:hover:before{
+  text-align:center ;
+  font-weight:600;
+  font-family:'Times New Roman', Times, serif ;
+     content:'Changed after hovering 1' ;
+ }  
+ .c2:before {
+
+  text-align:center ;
+  font-weight:600; 
+  font-family:'Times New Roman', Times, serif ;
+     content:'Aman Dhattarwal is a motivational speaker' ;
+    }
+    .c2:hover:before{
+  
+      text-align:center ;
+      font-weight:600;
+      font-family:'Times New Roman', Times, serif ;
+        content:'Changed after hovering 2' ;
+    }  
+    .c3:before {
+  
+      text-align:center ;
+      font-weight:600;
+      font-family:'Times New Roman', Times, serif ;
+     content:' Aman Dhattarwal is a popular Youtouber' ;
+    }
+    .c3:hover:before{
+  
+      text-align:center ;
+      font-weight:600;
+      font-family:'Times New Roman', Times, serif ;
+        content:'changed after hovering 3' ;
+    } 
+    .c4:before {
+  
+      text-align:center ;
+      font-weight:600;
+      font-family:'Times New Roman', Times, serif ;
+     content:'Aman Dhattarwal is a motivational speaker' ;
+    }
+    .c4:hover:before{
+  
+      text-align:center ;
+      font-weight:600;
+      font-family:'Times New Roman', Times, serif ;
+      content:' Changed after hovering 4' ;
+  } 
 .timeline_heading {
   text-align: center;
   padding-top: 0.25em;
+  font-family: "Fira Sans", sans-serif;
 }
-.centrer{
-  padding-left:auto ;
-  padding-right:auto ;
+.timeline__heading::first-letter{
+  color: blue;
+  font-size: 2em;
 }
 .timeline {
   margin: 0 auto;
@@ -255,12 +310,19 @@ nav ul li {
 .timeline__component {
   margin: 5% 5% 5% 5%;
 }
-
+.timeline__component--bg:hover{
+    transition-duration: 400ms;
+    transform:  translateX(3px)  translateY(-2px);
+    transition-delay: 20ms;
+    box-shadow:0px 8px 6px 0px rgba(0,5,4,.8) ;
+    border: 0px;
+}
 .timeline__component--bg {
   padding: 0.5em;
   background: rgba(255, 255, 255, 0.2);
   box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.2);
   border-radius: 10%;
+  background-color: aqua;
 }
 
 .timeline_image img{
@@ -294,7 +356,7 @@ nav ul li {
   transform: translateX(-50%);
   width: 0.65em;
   height: 0.65em;
-  background: blue;
+  background: red;
   border-radius: 50%;
 }
 
@@ -303,7 +365,11 @@ nav ul li {
   top: initial;
   bottom: 0;
 }
-
+.timeline__date{
+  font-weight:1000;
+  font-size: 1.2em;
+  font-family:'Times New Roman', Times, serif ;
+}
 .timeline__date--right {
   text-align: right;
 }
@@ -373,47 +439,71 @@ nav ul li {
 
 /* Gallery */
 
-.galleryContainer {
-  display: flex;
-  flex-direction: column;
+.wrapper{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(20em,1fr));
+  padding-top: 1em;
+  width:90%;
+  margin: auto;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  margin: 40px 20px 0 20px;
+  grid-gap: 1em;
+  bottom: 0;
+   left: 0;
+   right: 0;
+}
+.image{
+   padding: 1em 0.8em;
+   padding-left: 1em;
+}
+.image img{
+   width: 500px;
+   height: 300px;
+   width: 100%;
+   border-radius: 10%;
+   box-shadow: 0 0.5 0.5em rgba(0, 0, 0.2, 0.2);
+}
+.image img:hover{
+   transition-duration: 400ms;
+   transform:  translateX(3px)  translateY(-2px);
+   transition-delay: 20ms;
+   box-shadow:0px 8px 6px 0px rgba(0,5,4,.8) ;
+   border: 0px;
+}
+.gallery{
+   justify-content: center;
+   align-items: center;
+   margin: auto;
+   margin-bottom: 1em;
+   padding-bottom: 1em;
 }
 
-.galleryContainer .heading h2 {
-  font-size: 35px;
-  font-weight: bolder;
-  padding-bottom: 10px;
+.gtext{
+   justify-content: center;padding-top: 30px;
+   align-items: center;
+   margin: auto;
+   text-align: center;
+   font-size: 2em;
+   margin-top: 1em;
+   font-style: bold;
+   font-family: "Fira Sans", sans-serif ;
 }
-
-.columns img {
-  width: 100%;
-  padding-bottom: 5px;
-  border-radius: 5px;
+.gtext::first-letter{
+   color: blue;
+   font-size: 2em;
 }
-
-@media (max-width: 1350px) {
-  .imageRow {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-}
-
 /* Sponsor */
 
 .sponsor-wrap {
-  padding-top: 30px;
+  padding-top: 1em;
   width: 100%;
   height: auto;
   text-align: center;
 }
 
 .sponsor-wrap h2{
-  font-size: 30px;
-  color: blue;
+  font-size: 1.75em;
+  font-family: "Fira Sans", sans-serif ;
 }
 
 .sponsor_list ul {
@@ -431,4 +521,76 @@ nav ul li {
 .sponsor_list ul li img{
   width: 100%;
   height: 100%;
+}
+/*Footer */
+footer{
+  position: relative;
+  bottom: 0;
+  
+  background: #111;
+  height: auto;
+  width: 100%;
+  font-family: "Open Sans";
+  padding-top: 40px;
+  color: #fff;
+}
+.footer-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+}
+.footer-content h3{
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 3rem;
+}
+.footer-content p{
+  max-width: 500px;
+  margin: 10px auto;
+  line-height: 28px;
+  font-size: 14px;
+}
+.socials{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 3rem 0;
+}
+.socials li{
+  margin: 0 10px;
+}
+.socials a{
+  text-decoration: none;
+  color: #fff;
+}
+.socials a i{
+  font-size: 1.1rem;
+  transition: color .4s ease;
+
+}
+.socials a:hover i{
+  color: aqua;
+}
+
+.footer-bottom{
+  background: #000;
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+}
+.footer-bottom p{
+  font-size: 14px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+}
+.footer-bottom span{
+  text-transform: uppercase;
+  opacity: .6;
+  font-weight: 200;
+  font-size: 20px;
 }

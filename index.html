@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Bootstrap CSS -->  
     <link rel='stylesheet' type='text/css' href='./App.css'>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <title>JU E-cell InspiraTalks</title>
   </head>
@@ -33,8 +34,8 @@
           </div>
       </nav>
 <!-- Headers-->
-            <div class="container m-5 ">
-            <img src='./resources/robinson-recalde-sT0n-Ie8OKo-unsplash.jpg' class='imgsz'>
+            <div class="container" id='header'>
+            <img src='./resources\product-school-D0rMhzEwiEA-unsplash.jpg' class='imgsz'>
             <div class='text-block'>
                         <h1 style='font-weight:600'>Inspira <span style='color: blue'>Talks</span></h1>
                         <p>Learn about the first hand experiences of experts</p>
@@ -57,16 +58,14 @@
                 <img src='./resources/aman.jpeg' alt="Aman Dhattarwal">
             </div>
             <h2 class="timeline__title">Aman Dhattarwal</h2>
-            <p class="timeline__paragraph1">
-            </p>
+            <p class='c1'></p>
         </div>
         <div class="timeline__component timeline__component--bg">
             <div class="timeline_image">
                 <img src='./resources/aman.jpeg' alt="Aman Dhattarwal">
             </div>
             <h2 class="timeline__title">Aman Dhattarwal</h2>
-            <p class="timeline__paragraph2">
-            </p>
+            <p class='c2'></p>
         </div>
         <div class="timeline__middle">
             <div class="timeline__point"></div>
@@ -85,55 +84,37 @@
                 <img src='./resources/aman.jpeg' alt="Aman Dhattarwal">
             </div>
             <h2 class="timeline__title">Aman Dhattarwal</h2>
-            <p class="timeline__paragraph3">
-            </p>
+            <p class='c3'></p>
         </div>
         <div class="timeline__component timeline__component--bottom timeline__component--bg">
             <div class="timeline_image">
                 <img src='./resources/aman.jpeg' alt="Aman Dhattarwal">
             </div>
             <h2 class="timeline__title">Aman Dhattarwal</h2>
-            <p class="timeline__paragraph4">
-            </p>
+            <p class='c4'></p>
         </div>
         <div class="timeline__middle">
             <div class="timeline__point"></div>
-            <div class="timeline__point timeline__point--bottom"></div>
         </div>
         <div class="timeline__component timeline__component--bottom">
             <div class="timeline__date">6pm, 11th September</div>
         </div>
     </div>
 <!--Gallery-->
-    <div class="galleryContainer">
-            <div class="heading" id='gallery'>
-                <h2>Gallery</h2>
-            </div>
-
-            <div class="imageRow row">
-                <div class="columns col-12 col-sm-12 col-md-6 col-lg-4">
-                    <img src='./resources/galleryPic.jpeg' alt="dummy pic" >
-                </div>
-                <div class="columns col-12 col-sm-12 col-md-6 col-lg-4">
-                    <img src='./resources/galleryPic.jpeg' alt="dummy pic" >
-                </div>
-                <div class="columns col-12 col-sm-12 col-md-6 col-lg-4">
-                    <img src='./resources/galleryPic.jpeg' alt="dummy pic" >
-                </div>
-                <div class="columns col-12 col-sm-12 col-md-6 col-lg-4">
-                    <img src='./resources/galleryPic.jpeg' alt="dummy pic" >
-                </div>
-                <div class="columns col-12 col-sm-12 col-md-6 col-lg-4">
-                    <img src='./resources/galleryPic.jpeg' alt="dummy pic" >
-                </div>
-                <div class="columns col-12 col-sm-12 col-md-6 col-lg-4">
-                    <img src='./resources/galleryPic.jpeg' alt="dummy pic" >
-                </div>
-            </div>
-        </div>
+    <section class="gallery" id='gallery'>
+      <p class="gtext">Gallery</p>
+     <div class="wrapper"> 
+      <div class="image"><img src="./resources/galleryPic.jpeg"></img></div>
+      <div class="image"><img src="./resources/galleryPic.jpeg"></img></div>
+      <div class="image"><img src="./resources/galleryPic.jpeg"></img></div>
+      <div class="image"><img src="./resources/galleryPic.jpeg"></img></div>
+      <div class="image"><img src="./resources/galleryPic.jpeg"></img></div>
+      <div class="image"><img src="./resources/galleryPic.jpeg"></img></div>
+    </div>
+    </section>
 <!--Sponsors-->
 <div class="sponsor-wrap" id='sponsor'>
-           <h2>Sponsored by</h2> 
+           <h2 class="gtext">Sponsored by</h2> 
            <div class="sponsor_list">
             <ul>
                 <li>
@@ -157,6 +138,22 @@
             </ul>
            </div>
         </div>
+        <footer>
+      <div class="footer-content">
+          <h3>E Summit-21</h3>
+          <p>We wish to ignite the passion of Entrepreneurship in the minds of the students, as well as reward the entrepreneurial zest.</p>
+          <ul class="socials">
+              <li><a href="https://www.facebook.com/juecell" target="blank"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="https://www.instagram.com/juecell/" target="blank"><i class="fa fa-instagram"></i></a></li>
+              
+              <li><a href="https://www.linkedin.com/school/juecell/" target="blank"><i class="fa fa-linkedin-square"></i></a></li>
+          </ul>
+      </div>
+      <div class="footer-bottom">
+          <p>copyright &copy;2021 designed by <span>JU E Cell</span></p>
+      </div>
+  </footer>
   </body>
 </html>
 
