@@ -3,9 +3,6 @@
 html {
   scroll-behavior: smooth;
 }
-body{
-  overflow-x: hidden;
-}
 .App {
   text-align: center;
 }
@@ -48,6 +45,7 @@ body{
 body {
   font-family: 'Playfair Display', serif !important;
   overflow-x: hidden;
+  margin:0;
 }
 
 /* Navbar */
@@ -63,16 +61,16 @@ body {
 }
 
 .logo {
-  width: 4.5rem;
-  height: 4rem; 
-  margin: 0.35em;
+  width: 3.5rem;
+  height: 3.5rem; 
+  margin: 0em;
 }
 
 .logoFont {
   font-family: 'Berkshire Swash', cursive;
   font-size: 1.7rem;
-  padding: 10px;
-  letter-spacing: 1px;
+  padding: 0em;
+  letter-spacing: 0.01em;
   color: blue;
 }
 
@@ -101,6 +99,7 @@ nav ul li {
   position:relative;
   left:0;
   right:0;
+  width:100%;
 }
 .imgsz{
   width:100%;
@@ -291,7 +290,7 @@ nav ul li {
   } 
 .timeline_heading {
   text-align: center;
-  padding-top: 0.25em;
+  padding-top: 1em;
   font-family: "Fira Sans", sans-serif;
 }
 .timeline__heading::first-letter{
@@ -479,13 +478,14 @@ nav ul li {
 }
 
 .gtext{
-   justify-content: center;padding-top: 30px;
+   justify-content: center;
+   padding-top: 1em;
    align-items: center;
    margin: auto;
    text-align: center;
    font-size: 2em;
-   margin-top: 1em;
    font-style: bold;
+   margin-top: 1em;
    font-family: "Fira Sans", sans-serif ;
 }
 .gtext::first-letter{
