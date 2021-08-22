@@ -328,18 +328,18 @@ nav ul li {
 .timeline__component {
   margin: 5% 5% 5% 5%;
 }
-.timeline__component--bg:hover{
+/*.timeline__component--bg:hover{
     transition-duration: 400ms;
     transform:  translateX(3px)  translateY(-2px);
     transition-delay: 20ms;
     box-shadow:0px 8px 6px 0px rgba(0,5,4,.8) ;
     border: 0px;
-}
+}*/
 .timeline__component--bg {
   padding: 0.5em;
   background: rgba(255, 255, 255, 0.2);
   box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.2);
-  border-radius: 10%;
+  border-radius: 5%;
   background-color: aqua;
 }
 
