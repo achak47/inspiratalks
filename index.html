@@ -12,10 +12,10 @@
   </head>
   <body>
   <!--Navbar-->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top ">
+  <nav class="navbar navbar-expand-sm navbar-light bg-light fixed-top ">
         <div class="container-fluid">
-            <a class="navbar-brand" href="{% url 'projects' %}">
-                <img src= "./resources/mic.png" alt="" class="logo">
+            <a class="navbar-brand" href="#">
+                <img src= "./resources/NSPIRA (7).png" alt="" class="logo">
                 <span class="logoFont">Inspira Talks</span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
@@ -24,30 +24,30 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item ">
+                    <li class="navbar-item ">
                         <a href="#header" class="nav-link nav_size"
-                            style="color: seashell; filter: brightness(2); font-size: large; font-weight: bold">Home</a>
+                            style="color: seashell; filter: brightness(2); font-size:20px; font-weight: bold">Home</a>
 
                     </li>
-                     <li class="nav-item ">
-                        <a href="{% url 'projects1' %}" class="nav-link nav_size"
-                            style="color: seashell; filter: brightness(2); font-size: large; font-weight: bold">About</a>
+                     <li class="navbar-item ">
+                        <a href="#about" class="nav-link nav_size"
+                            style="color: seashell; filter: brightness(2); font-size:20px; font-weight: bold">About</a>
 
                     </li>
 
-                    <li class="nav-item">
-                        <a href="#timeline" class="nav-link "
-                            style="color: seashell; filter: brightness(2); font-size: large; font-weight: bold">Timeline</a>
+                    <li class="navbar-item">
+                        <a href="#timeline" class="nav-link nav_size"
+                            style="color: seashell; filter: brightness(2); font-size:20px; font-weight: bold">Timeline</a>
 
                     </li>
-                    <li class="nav-item">
-                        <a href="#gallery" class="nav-link"
-                            style="color: seashell; font-size: large; font-weight: bold">Gallery</a>
+                    <li class="navbar-item">
+                        <a href="#gallery" class="nav-link nav_size"
+                            style="color: seashell; font-size:20px; font-weight: bold">Gallery</a>
 
                     </li>
-                    <li class="nav-item">
-                        <a href="#sponsor" class="nav-link"
-                            style="color: seashell; filter: brightness(2); font-size: large; font-weight: bold">Sponsors</a>
+                    <li class="navbar-item">
+                        <a href="#sponsor" class="nav-link nav_size"
+                            style="color: seashell; filter: brightness(2); font-size:20px; font-weight: bold">Sponsors</a>
 
                     </li>
                    <!-- <li class="navbar-item">
@@ -79,7 +79,7 @@
           </div>
       </nav>-->
 <!-- Headers-->
-            <div class="container" id='header'>
+            <div class="container-fluid" id='header'>
             <img src='./resources/product-school-D0rMhzEwiEA-unsplash.jpg' class='imgsz'>
             <div class='text-block'>
                         <h1 style='font-weight:600'>Inspira <span style='color: blue'>Talks</span></h1>
@@ -103,14 +103,36 @@
                 <img src='./resources/aman.jpeg' alt="Aman Dhattarwal">
             </div>
             <h2 class="timeline__title">Aman Dhattarwal</h2>
-            <p class='c1'></p>
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+  <div class="accordion-item" >
+    <h2 class="accordion-header" id="flush-headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo" style='background-color: aqua'>
+        Accordion Item #1
+      </button>
+    </h2>
+    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body" style='background-color: aqua'>Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+    </div>
+  </div>
+  </div>
         </div>
         <div class="timeline__component timeline__component--bg">
             <div class="timeline_image">
                 <img src='./resources/aman.jpeg' alt="Aman Dhattarwal">
             </div>
             <h2 class="timeline__title">Aman Dhattarwal</h2>
-            <p class='c2'></p>
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree" style='background-color: aqua'>
+        Accordion Item #1
+      </button>
+    </h2>
+    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body" style='background-color: aqua'>Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+    </div>
+  </div>
+  </div>
         </div>
         <div class="timeline__middle">
             <div class="timeline__point"></div>
@@ -129,14 +151,36 @@
                 <img src='./resources/aman.jpeg' alt="Aman Dhattarwal">
             </div>
             <h2 class="timeline__title">Aman Dhattarwal</h2>
-            <p class='c3'></p>
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingFour">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour" style='background-color: aqua'>
+        Accordion Item #1
+      </button>
+    </h2>
+    <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body" style='background-color: aqua'>Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+    </div>
+  </div>
+  </div>
         </div>
         <div class="timeline__component timeline__component--bottom timeline__component--bg">
             <div class="timeline_image">
                 <img src='./resources/aman.jpeg' alt="Aman Dhattarwal">
             </div>
             <h2 class="timeline__title">Aman Dhattarwal</h2>
-            <p class='c4'></p>
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingOne">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne" style='background-color: aqua'>
+        Accordion Item #1
+      </button>
+    </h2>
+    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body" style='background-color: aqua'>Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+    </div>
+  </div>
+  </div>
         </div>
         <div class="timeline__middle">
             <div class="timeline__point"></div>
@@ -199,6 +243,7 @@
           <p>copyright &copy;2021 designed by <span>JU E Cell</span></p>
       </div>
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
   </body>
 </html>
 
